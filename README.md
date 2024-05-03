@@ -115,7 +115,7 @@ _SSLG4/data/oscnt_: This directory contains energy-dependent data for organic sc
 
 _SSLG4/data/iscnt_: This directory contains energy-dependent data for inorganic scintillators.
 
-_testSSLG4Ex_: This directory includes a Geant4 application developed to test whether the properties of scintillators defined in SSLG4 are accurately transferred to the Geant4 system. The application is entirely controlled by a macro file named run.mac, which contains various simulation settings. These settings include scintillator selection, primary particle control, toggling optical physics processes on and off, controlling critical optical parameters, and specifying the simulation output file type. The application outputs the following physics quantities in n-tuple format on an event-by-event basis: 
+_testSSLG4Ex_: This directory includes a Geant4 application developed to test whether the properties of scintillators defined in SSLG4 are accurately transferred to the Geant4 system. The application is entirely controlled by a macro file named _run.mac_, which contains various simulation settings. These settings include scintillator selection, primary particle control, toggling optical physics processes on and off, controlling critical optical parameters, and specifying the simulation output file type. The application outputs the following physics quantities in n-tuple format on an event-by-event basis: 
 
 * Event ID
 * Wavelength and energy spectrum of emitted photons.  
@@ -133,7 +133,7 @@ As these quantities are retrieved from the Geant4 kernel during the simulation s
    - Compiler: GCC 11.3.0
    - Geant4 Version: 11.1.1
 
-2. **macOS (macOS Sonoma 14.4.1)**
+2. **macOS (Sonoma 14.4.1)**
    - Architecture: arm64
    - Compiler: Apple clang version 15.0.0
    - Geant4 Version: 11.2.1
