@@ -1,0 +1,14 @@
+#EJ-426 mpt
+
+/control/alias scnt opsc-133
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt eV unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt eV cm   
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 40000 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 200 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 1.5 ns
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

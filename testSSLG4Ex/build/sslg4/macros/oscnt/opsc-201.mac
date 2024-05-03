@@ -1,0 +1,16 @@
+#SP-33 mpt
+
+/control/alias scnt opsc-201
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 8470 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 2.5 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 1.0 ns #?
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0
+
+

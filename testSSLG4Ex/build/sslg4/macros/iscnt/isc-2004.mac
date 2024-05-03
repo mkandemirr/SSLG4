@@ -1,0 +1,13 @@
+#NaITI mpt
+/control/alias scnt isc-2004
+/control/alias pathToDataDir sslg4/data/iscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 41 1/keV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 630.0 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 1.0 ns    #?
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

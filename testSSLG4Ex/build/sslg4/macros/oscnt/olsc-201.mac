@@ -1,0 +1,27 @@
+#WBLS_1pct_gd_01pct
+
+
+/control/alias scnt olsc-201
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT2 {pathToDataDir}/scntComp2.txt nm unitless
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT3 {pathToDataDir}/scntComp3.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless
+/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm mm
+/mpt/{scnt}/addProperty RAYLEIGH {pathToDataDir}/rsLength.txt nm mm
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 234 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 0.987 
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD2 0.012 
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD3 0.001 
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 2.01 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT2 12.73 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT3 116.86 ns
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 0.25 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME2 0.25 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME3 0.25 ns
+
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

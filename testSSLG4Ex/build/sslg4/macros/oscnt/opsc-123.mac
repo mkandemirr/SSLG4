@@ -1,0 +1,15 @@
+#EJ-260/NE-103/BC-428 mpt
+/control/alias scnt opsc-123
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt eV unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+/mpt/{scnt}/addProperty WLSABSLENGTH {pathToDataDir}/wlsAbsLength.txt eV cm 
+/mpt/{scnt}/addProperty WLSCOMPONENT {pathToDataDir}/wlsComp.txt eV unitless
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 9200 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 9.2 ns
+/mpt/{scnt}/addConstProperty WLSTIMECONSTANT 9.2 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 1.51 ns
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

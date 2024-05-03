@@ -1,0 +1,89 @@
+# Macro file for the initialization of the application in batch mode
+
+# Set some default verbose
+/control/verbose 2
+/control/saveHistory
+#/control/cout/setCoutFile deneme
+/run/verbose 2
+#
+# Change the default number of threads (in multi-threaded mode)
+/run/numberOfThreads 2
+/run/printProgress 100
+#/tracking/verbose 1
+
+###############################Physics process commands#########################
+
+# physics commands should be called before initialization
+#Normally, PhotonSD does not called automatically when the boundary status is 
+#detection
+/process/optical/boundary/setInvokeSD true
+
+#defult type = all
+#/process/setVerbose verbose type 
+#/process/activate procName particle(default all) 
+#/process/inactivate procName particle(default all) 
+
+#/process/optical/boundary/verbose 2
+#/process/optical/verbose 2
+
+#name may be one of Cerenkov, Scintillation, OpAbsorption, OpRayleigh, OpMieHG, 
+#OpBoundary, OpWLS,OWLS2. By default, all the processes are activated.
+
+/process/optical/processActivation OpAbsorption true
+/process/optical/processActivation OpRayleigh true
+/process/optical/processActivation Scintillation true
+/process/optical/processActivation Cerenkov false
+
+#scintillation
+/process/optical/scintillation/setByParticleType false
+#/process/optical/scintillation/setTrackInfo false
+/process/optical/scintillation/setFiniteRiseTime false
+#/process/optical/scintillation/verbose verbose
+
+###################Geometry commands############################################
+
+/ssl/type organic
+/ssl/name opsc-100
+/ssl/enableMPT true
+
+###################Analysis commands############################################
+
+#analysis output
+#/analysis/setDefaultFileType csv
+#/analysis/verbose 0 # up to 4 print only first ntuple
+#/analysis/list true #[onlyIfActive]
+
+/analysis/ntuple/setActivation 0 true #GeneralInfo
+
+################################################################################
+
+# Initialize kernel
+/run/initialize
+
+###################Primary particle commands####################################
+
+#Select particle type
+/gps/particle e-
+
+#Set beams's energy
+/gps/ene/mono 1 MeV
+
+#Defining the Source Shape
+/gps/pos/type Point
+
+#Set beam's momentum
+/gps/direction 0 0 -1
+
+#isotropic emission
+#/gps/ang/type iso
+
+#Set beam's starting position
+/gps/pos/centre 0 0 0 mm
+
+/gps/number 1
+/gps/verbose 0
+
+###################Run start####################################################
+
+/run/beamOn 1000
+

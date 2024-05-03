@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libOPSim.a CMakeFiles/OPSim.dir/src/FileReader.cc.o CMakeFiles/OPSim.dir/src/OpticalSurfaceMessenger.cc.o CMakeFiles/OPSim.dir/src/MaterialPropertiesTable.cc.o CMakeFiles/OPSim.dir/src/VMaterialBuilder.cc.o CMakeFiles/OPSim.dir/src/MaterialPropertiesTableMessenger.cc.o CMakeFiles/OPSim.dir/src/VMaterialFactory.cc.o CMakeFiles/OPSim.dir/src/OpticalSurface.cc.o CMakeFiles/OPSim.dir/src/ScintillatorBuilder.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libOPSim.a

@@ -1,0 +1,13 @@
+#EJ-232Q-0.5 mpt
+/control/alias scnt opsc-108
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 2900 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 700 ps
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 110 ps
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

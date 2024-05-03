@@ -1,0 +1,13 @@
+#BGO mpt
+/control/alias scnt isc-2000
+/control/alias pathToDataDir sslg4/data/iscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt eV unitless 
+#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt eV cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 8 1/keV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 300.0 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 1.0 ns
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

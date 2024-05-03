@@ -1,0 +1,86 @@
+/run/verbose 2
+/run/numberOfThreads 1
+/process/optical/boundary/setInvokeSD true
+/run/physicsModified
+/ssl/type organic
+/ssl/name opsc-133
+/ssl/enableMPT true
+/analysis/ntuple/setActivation 0 false
+/run/initialize
+/control/alias scnt opsc-133
+/control/alias pathToDataDir sslg4/data/oscnt/opsc-133
+/gps/particle e-
+/gps/ene/mono 1 MeV
+/gps/pos/type Point
+/gps/ang/type iso
+/gps/pos/centre 0 0 0 mm
+/gps/number 1
+/gps/verbose 0
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/set/colour red
+/vis/set/lineWidth 2
+/vis/scene/add/frame
+/vis/scene/notifyHandlers
+/vis/set/colour
+/vis/set/lineWidth
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set e+ magenta
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set neutron green
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set triton brown
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set alpha blue
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set gamma red
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton white
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/default/setStepPtsSize 4
+/vis/scene/notifyHandlers scene-0
+/tracking/storeTrajectory 1
+/vis/geometry/set/visibility WorldLV 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility ScntLV 0 true
+/vis/scene/notifyHandlers
+/vis/geometry/set/forceWireframe ScntLV 0 true
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour ScntLV 0 blue
+/vis/scene/notifyHandlers
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 150
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector

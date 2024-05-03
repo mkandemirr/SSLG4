@@ -1,0 +1,13 @@
+#EJ-240/NE-115/BC-444 mpt
+/control/alias scnt opsc-113
+/control/alias pathToDataDir sslg4/data/oscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
+/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 6300 1/MeV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 285 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 0.9 ns
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0

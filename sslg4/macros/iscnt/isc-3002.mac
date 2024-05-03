@@ -1,0 +1,16 @@
+#PbWO4 mpt
+/control/alias scnt isc-3002
+/control/alias pathToDataDir sslg4/data/iscnt/{scnt}
+
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt eV unitless
+/mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT2 {pathToDataDir}/scntComp2.txt eV unitless
+/mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt eV unitless 
+#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt eV cm  
+
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 0.45 1/keV
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 0.3 
+/mpt/{scnt}/addConstProperty SCINTILLATIONYIELD2 0.7 
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT1 5.0 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONTIMECONSTANT2 15.0 ns
+/mpt/{scnt}/addConstProperty SCINTILLATIONRISETIME1 0.01 ns
+/mpt/{scnt}/addConstProperty RESOLUTIONSCALE 1.0
