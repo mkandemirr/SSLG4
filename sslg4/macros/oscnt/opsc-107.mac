@@ -4,7 +4,7 @@
 
 /mpt/{scnt}/addProperty SCINTILLATIONCOMPONENT1 {pathToDataDir}/scntComp1.txt nm unitless
 /mpt/{scnt}/addProperty RINDEX {pathToDataDir}/rIndex.txt nm unitless 
-#/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
+/mpt/{scnt}/addProperty ABSLENGTH {pathToDataDir}/absLength.txt nm cm  
 
 /mpt/{scnt}/addConstProperty SCINTILLATIONYIELD 8400 1/MeV
 /mpt/{scnt}/addConstProperty SCINTILLATIONYIELD1 1 

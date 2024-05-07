@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libsslg4.a CMakeFiles/sslg4.dir/src/EJ426Builder.cc.o CMakeFiles/sslg4.dir/src/OrganicScintillatorFactory.cc.o CMakeFiles/sslg4.dir/src/InorganicScintillatorFactory.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libsslg4.a
