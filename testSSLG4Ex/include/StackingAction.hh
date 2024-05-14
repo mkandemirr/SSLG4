@@ -3,6 +3,7 @@
 #ifndef StackingAction_h
 #define StackingAction_h 1
 
+#include <vector>
 #include "globals.hh"
 #include "G4UserStackingAction.hh"
 
