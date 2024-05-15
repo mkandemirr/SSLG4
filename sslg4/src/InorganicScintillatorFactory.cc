@@ -164,7 +164,7 @@ G4Material* InorganicScintillatorFactory::BuildScntFromElementFraction()
                               bEnableMPT
                               );
     
-    mElementFracVec.size();                                 
+    mElementFracVec.clear();                                 
     return builder.GetProduct();
   
 } 
