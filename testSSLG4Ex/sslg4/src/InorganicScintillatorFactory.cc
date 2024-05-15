@@ -162,11 +162,9 @@ G4Material* InorganicScintillatorFactory::BuildScntFromElementFraction()
                               mDensity,
                               mElementFracVec,
                               bEnableMPT
-                              );
-    
-    mElementFracVec.clear();                                 
-    return builder.GetProduct();
-  
+                              ); 
+  mElementFracVec.clear();                                 
+  return builder.GetProduct();
 } 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -174,14 +172,13 @@ G4Material* InorganicScintillatorFactory::BuildScntFromElementFraction()
 G4Material* InorganicScintillatorFactory::BuildScntFromElementNumber()
 {
   ScintillatorBuilder builder(mProductName, 
-                             mMacroFilePath,
-                             mDensity,
-                             mElementNumVec,
-                             bEnableMPT
-                             );
-    mElementNumVec.clear();                                   
-    return builder.GetProduct();
-  
+                              mMacroFilePath,
+                              mDensity,
+                              mElementNumVec,
+                              bEnableMPT
+                              );
+  mElementNumVec.clear();                                   
+  return builder.GetProduct();
 } 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -192,8 +189,7 @@ G4Material* InorganicScintillatorFactory::BuildScntFromPredefinedMaterial()
                               mMacroFilePath,
                               mMaterial,
                               bEnableMPT
-                              );
-                                                                
+                              );                                                            
   return builder.GetProduct(); 
 } 
 

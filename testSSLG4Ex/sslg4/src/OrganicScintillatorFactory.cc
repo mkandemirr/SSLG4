@@ -182,6 +182,7 @@ G4Material* OrganicScintillatorFactory::CreateMaterial
                                 mElementFracVec,
                                 bEnableMPT
                                 );
+    mElementFracVec.clear();                            
     return builder.GetProduct(); 
       
   }else if (mProductName == "opsc-105")
@@ -437,7 +438,6 @@ G4Material* OrganicScintillatorFactory::CreateMaterial
     G4double cMF = cMD/mDensity;
     G4double fMF = fMD/mDensity;
    
-    
     mElementFracVec = { {"H", hMF}, {"C", cMF}, {"F", fMF} };
   
     ScintillatorBuilder builder(mProductName, 
@@ -446,6 +446,7 @@ G4Material* OrganicScintillatorFactory::CreateMaterial
                                 mElementFracVec,
                                 bEnableMPT
                                 );
+    mElementFracVec.clear();                            
     return builder.GetProduct(); 
         
   }else if (mProductName == "olsc-106")
@@ -528,6 +529,7 @@ G4Material* OrganicScintillatorFactory::CreateMaterial
                                 mElementFracVec,
                                 bEnableMPT
                                 );
+    mElementFracVec.clear();                            
     return builder.GetProduct(); 
       
   }else if (mProductName == "olsc-200")
@@ -669,6 +671,7 @@ G4Material* OrganicScintillatorFactory::BuildScintillator()
                               mElementFracVec,
                               bEnableMPT
                               );
+  mElementFracVec.clear();                           
   return builder.GetProduct();
 } 
 
@@ -715,6 +718,7 @@ G4Material* OrganicScintillatorFactory::BuildLoadedScintillator
                               mElementFracVec,
                               bEnableMPT
                               );
+  mElementFracVec.clear();                            
   return builder.GetProduct(); 
 }
 
