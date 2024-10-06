@@ -190,4 +190,18 @@ passed to CMake. The first argument to CMake is the path to the source directory
 If you have any questions or wish to notify of updates and/or modifications please contact: \
 Mustafa Kandemir (mustafa.kandemir@erdogan.edu.tr)
 
+## Citation
+@article{KANDEMIR2025109385, \
+title = {SSLG4: A novel scintillator simulation library for Geant4}, \
+journal = {Computer Physics Communications}, \
+volume = {306}, \
+pages = {109385}, \
+year = {2025}, \
+issn = {0010-4655}, \
+doi = {https://doi.org/10.1016/j.cpc.2024.109385}, \
+url = {https://www.sciencedirect.com/science/article/pii/S0010465524003084}, \
+author = {Mustafa Kandemir and Emrah Tiras and Burcu Kirezli and İbrahim Koca}, \
+keywords = {Scintillator library, Predefined scintillator, Optical photon simulation, Material optical properties, Eljen scintillators}, \
+
+}
 
